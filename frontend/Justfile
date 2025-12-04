@@ -1,0 +1,5 @@
+_install:
+  npm install
+
+run: _install
+  npm run dev

@@ -1,0 +1,19 @@
+[project]
+name = "fincat-be"
+version = "0.1.0"
+description = "Financial chatbot CLI for investigating stock prices"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ollama>=0.4.0", # Python client for local Ollama server
+    "requests>=2.32.0", # HTTP client for data providers / future providers
+    "alpha_vantage>=2.3.1", # Python SDK for Alpha Vantage
+    "dotenv>=0.9.9",
+    "yahoo-fin>=0.8.9.1",
+    "yfinance>=0.2.66",
+    "requests-html>=0.10.0",
+    # lxml-html-clean is required for HttpSession creation.
+    "lxml-html-clean>=0.4.3",
+    "fastapi",
+    "uvicorn>=0.38.0",
+]
